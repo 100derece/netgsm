@@ -1,5 +1,5 @@
 {
-    "name": "vomsis/netgsm",
+    "name": "yuzderece/netgsm",
     "description": "NetGsm Sms Entegrasyonu",
     "type": "library",
     "license": "MIT",
@@ -7,6 +7,14 @@
         {
             "name": "Ramazan Uç",
             "email": "ramazan.uc@odaxa.com.tr"
+        },
+        {
+          name: "Emre DEĞER",
+          email: "emredeger16@gmail.com"
+        },
+        {
+          name: "Volkan BIYIKLI",
+          email: "volkan@100derece.com"
         }
     ],
     "require": {
@@ -16,16 +24,16 @@
     },
     "autoload":{
         "psr-4":{
-            "Vomsis\\Netgsm\\": "src/"
+            "Yuzderece\\Netgsm\\": "src/"
         }
     },
     "extra":{
         "laravel":{
             "providers":[
-                "Vomsis\\Netgsm\\NetgsmServiceProvider"
+                "Yuzderece\\Netgsm\\NetgsmServiceProvider"
             ],
             "aliases":{
-                "Netgsm": "Vomsis\\Netgsm\\NetgsmFacade"
+                "Netgsm": "Yuzderece\\Netgsm\\NetgsmFacade"
             }
         }
     }
