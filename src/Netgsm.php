@@ -1,22 +1,15 @@
 <?php
 
-namespace Vomsis\Netgsm;
+namespace Yuzderece\Netgsm;
 
 use GuzzleHttp\Client;
-use Vomsis\Netgsm\Exception\AuthException;
-use Vomsis\Netgsm\Exception\HeaderException;
-use Vomsis\Netgsm\Exception\MessageException;
-use Vomsis\Netgsm\Exception\ParameterException;
+use Yuzderece\Netgsm\Exception\AuthException;
+use Yuzcerece\Netgsm\Exception\HeaderException;
+use Yuzderece\Netgsm\Exception\MessageException;
+use Yuzderece\Netgsm\Exception\ParameterException;
 
-/**
- * Created by PhpStorm.
- * User: macbookpro
- * Date: 18.02.2018
- * Time: 14:13
- */
 class Netgsm
 {
-
     protected $url;
     protected $username;
     protected $password;
@@ -26,11 +19,11 @@ class Netgsm
 
     public function __construct($config)
     {
-        $this->url = $config->get('netgsm.url');
-        $this->username = $config->get('netgsm.username');
-        $this->password = $config->get('netgsm.password');
-        $this->header = $config->get('netgsm.header');
-        $this->lang = $config->get('netgsm.language');
+        $this->url = config('netgsm.url');
+        $this->username = config('netgsm.username');
+        $this->password = config('netgsm.password');
+        $this->header = config('netgsm.header');
+        $this->lang = config('netgsm.language');
         $this->http = new Client([
             "base_uri" => $this->url,
             "timeout" => 10

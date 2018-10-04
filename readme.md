@@ -5,27 +5,7 @@
 Install package with **composer**
 
 ```
-composer require vomsis/netgsm
-```
-
-In Laravel 5.5+ package will auto discovery.
-
-### Optional Steps for Laravel 5.4-
-
-Add package provider to `config/app.php` file
-
-```
-'providers' => [
-    Vomsis\Netgsm\NetgsmServiceProvider::class,
-]
-```
-
-Add alias to `config/app.php` file
-
-```
-'aliases' => [
-    'Netgsm' => Vomsis\Netgsm\NetgsmFacade::class,
-]
+composer require yuzderece/netgsm
 ```
 
 ## Configuration
@@ -39,12 +19,12 @@ NETGSM_PASSWORD=
 NETGSM_HEADER=
 ```
 
-`NETGSM_URL` is API base url of netgsm. `NETGSM_USERNAME` and `NETGSM_PASSWORD` is authentication information of netgsm. `NETGSM_HEADER` is default header of sms messages. 
+`NETGSM_URL` is API base url of netgsm. `NETGSM_USERNAME` and `NETGSM_PASSWORD` is authentication information of netgsm. `NETGSM_HEADER` is default header of sms messages.
 
 You can also publish config file.
 
 ```
-php artisan vendor:publish --provider="Vomsis\Netgsm\NetgsmServiceProvider"
+php artisan vendor:publish --provider="Yuzderece\Netgsm\NetgsmServiceProvider"
 ```
 
 ## Usage
