@@ -9,12 +9,12 @@
             "email": "ramazan.uc@odaxa.com.tr"
         },
         {
-          name: "Emre DEĞER",
-          email: "emredeger16@gmail.com"
+            "name": "Emre DEĞER",
+            "email": "emredeger16@gmail.com"
         },
         {
-          name: "Volkan BIYIKLI",
-          email: "volkan@100derece.com"
+            "name": "Volkan BIYIKLI",
+            "email": "volkan@100derece.com"
         }
     ],
     "require": {
