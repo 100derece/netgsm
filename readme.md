@@ -21,12 +21,6 @@ NETGSM_HEADER=
 
 `NETGSM_URL` is API base url of netgsm. `NETGSM_USERNAME` and `NETGSM_PASSWORD` is authentication information of netgsm. `NETGSM_HEADER` is default header of sms messages.
 
-You can also publish config file.
-
-```
-php artisan vendor:publish --provider="Yuzderece\Netgsm\NetgsmServiceProvider"
-```
-
 ## Usage
 
 Send sms to one number
