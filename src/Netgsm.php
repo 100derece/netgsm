@@ -17,7 +17,7 @@ class Netgsm
     protected $lang;
     protected $http;
 
-    public function __construct($config)
+    public function __construct()
     {
         $this->url = config('netgsm.url');
         $this->username = config('netgsm.username');
